@@ -12,6 +12,7 @@ def pad(s):
     padding_needed = block_size - remainder
     return s + padding_needed * ' '
 
+
 # Function to remove extra spaces at the end no loose ends remaining :)
 def unpad(s):
     return s.rstrip()

@@ -1,0 +1,11 @@
+The code begins by importing essential modules required for its cryptographic operations. These modules include 'base64' for encoding and decoding data, 'hashlib' for hashing functions, AES encryption from the 'Cryptodome' library, and a utility for generating random bytes.
+
+To ensure that the input text aligns with the 16-byte block requirement of AES encryption, the code defines two handy functions: 'pad' and 'unpad'. 'Pad' adds extra spaces to the input if needed, and 'unpad' removes them when decryption is complete.
+
+The 'encrypt' function plays a central role. It accepts plain text and a password as its inputs. Inside this function, a random salt is generated. Using both the password and salt, a private key is derived through the Scrypt key derivation function. Subsequently, a cipher configuration is established, leveraging AES in GCM (Galois/Counter Mode) for encryption. The result is the encrypted plain text encapsulated within a dictionary, which also includes the salt, nonce, and tag.
+
+On the other hand, the 'decrypt' function is responsible for reversing the encryption process. It takes an encryption dictionary and a password as arguments. The dictionary entries are first decoded from base64 format. Next, the private key is derived from the password and salt. Using the provided nonce, the code sets up the AES cipher configuration in GCM mode and proceeds to decrypt the cipher text. It then verifies the integrity of the decrypted data using the provided tag.
+
+The program's main function serves as the entry point. It prompts the user to enter a password, encrypts a predefined sample message, displays the resulting encrypted data, and finally decrypts it using the original password, revealing the original message.
+
+Lastly, the code is executed when the script is run, starting with the invocation of the main function. This entire process allows for the secure encryption and decryption of sensitive information while maintaining data integrity.
