@@ -1,5 +1,5 @@
 ✅ Privacy Policy for Ask-A-Classmate
-Effective Date: [Insert Today’s Date]
+Effective Date: 2025-04-17
 
 1. Introduction
 Ask-A-Classmate (“we”, “our”, or “us”) respects your privacy. This Privacy Policy explains how we handle your personal information when you use the Ask-A-Classmate iOS application (“App”).
@@ -46,6 +46,4 @@ Ask-A-Classmate is designed for users age 13 and older. We do not knowingly coll
 We may update this policy from time to time. Changes will be reflected in the app and on our support site.
 
 10. Contact Us
-If you have any questions about this policy, please contact us at:
-📩 support@askaclassmate.app (or your real email address)
-
+If you have any questions about this policy, please contact us at: kevin.gca2004@gmail.com
